@@ -22,5 +22,3 @@ for x in inty:
     third = third + 1
 
 print(morethan)
-
-

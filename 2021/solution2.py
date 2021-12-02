@@ -3,8 +3,6 @@ with open('input2.txt', 'r') as f:
 
 inp = list(map(str, input.split("\n")))
 
-#print(inp)
-
 hpos = 0
 vpos = 0
 aim = 0
@@ -24,14 +22,10 @@ for x in range(len(inp)):
   if dirs[x] == "forward":
     hpos = hpos + numbers[x]
     depth = depth + (aim * numbers[x])
-  elif dirs[x]== "up" :
+  elif dirs[x] == "up" :
     aim = aim - numbers[x]
   else: 
     aim = aim + numbers[x]
-  # print(x)
-  # print(vpos)
-  # print(depth)
-  # print(aim)
   
 final = depth * hpos
 print(depth)
